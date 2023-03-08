@@ -30,7 +30,8 @@ namespace _002_bmi
             weight = double.Parse(textBox2.Text);
 
             double bmi = weight / (height / 100 * height / 100);
-            label3.Text = "BMI = " + bmi;
+            //label3.Text = "BMI = " + bmi + "입니다.";
+            label3.Text = string.Format("BMI = {0} 입니다", bmi);
         }
     }
 }

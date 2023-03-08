@@ -1,0 +1,8 @@
+C:\Users\konyang\source\repos\CS2\CS02\003_print2values\bin\Debug\003_print2values.exe.config
+C:\Users\konyang\source\repos\CS2\CS02\003_print2values\bin\Debug\003_print2values.exe
+C:\Users\konyang\source\repos\CS2\CS02\003_print2values\bin\Debug\003_print2values.pdb
+C:\Users\konyang\source\repos\CS2\CS02\003_print2values\obj\Debug\003_print2values.csproj.AssemblyReference.cache
+C:\Users\konyang\source\repos\CS2\CS02\003_print2values\obj\Debug\003_print2values.csproj.SuggestedBindingRedirects.cache
+C:\Users\konyang\source\repos\CS2\CS02\003_print2values\obj\Debug\003_print2values.csproj.CoreCompileInputs.cache
+C:\Users\konyang\source\repos\CS2\CS02\003_print2values\obj\Debug\003_print2values.exe
+C:\Users\konyang\source\repos\CS2\CS02\003_print2values\obj\Debug\003_print2values.pdb
