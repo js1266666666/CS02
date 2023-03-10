@@ -1,0 +1,11 @@
+C:\Users\konyang\Desktop\VP02_2023-main\005_login_\bin\Debug\005_login_.exe.config
+C:\Users\konyang\Desktop\VP02_2023-main\005_login_\bin\Debug\005_login_.exe
+C:\Users\konyang\Desktop\VP02_2023-main\005_login_\bin\Debug\005_login_.pdb
+C:\Users\konyang\Desktop\VP02_2023-main\005_login_\obj\Debug\005_login_.csproj.AssemblyReference.cache
+C:\Users\konyang\Desktop\VP02_2023-main\005_login_\obj\Debug\005_login_.csproj.SuggestedBindingRedirects.cache
+C:\Users\konyang\Desktop\VP02_2023-main\005_login_\obj\Debug\_005_login_.Form1.resources
+C:\Users\konyang\Desktop\VP02_2023-main\005_login_\obj\Debug\_005_login_.Properties.Resources.resources
+C:\Users\konyang\Desktop\VP02_2023-main\005_login_\obj\Debug\005_login_.csproj.GenerateResource.cache
+C:\Users\konyang\Desktop\VP02_2023-main\005_login_\obj\Debug\005_login_.csproj.CoreCompileInputs.cache
+C:\Users\konyang\Desktop\VP02_2023-main\005_login_\obj\Debug\005_login_.exe
+C:\Users\konyang\Desktop\VP02_2023-main\005_login_\obj\Debug\005_login_.pdb

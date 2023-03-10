@@ -1,0 +1,11 @@
+C:\Users\konyang\Desktop\VP02_2023-main\004_hello\bin\Debug\004_hello.exe.config
+C:\Users\konyang\Desktop\VP02_2023-main\004_hello\bin\Debug\004_hello.exe
+C:\Users\konyang\Desktop\VP02_2023-main\004_hello\bin\Debug\004_hello.pdb
+C:\Users\konyang\Desktop\VP02_2023-main\004_hello\obj\Debug\004_hello.csproj.AssemblyReference.cache
+C:\Users\konyang\Desktop\VP02_2023-main\004_hello\obj\Debug\004_hello.csproj.SuggestedBindingRedirects.cache
+C:\Users\konyang\Desktop\VP02_2023-main\004_hello\obj\Debug\_004_hello.Form1.resources
+C:\Users\konyang\Desktop\VP02_2023-main\004_hello\obj\Debug\_004_hello.Properties.Resources.resources
+C:\Users\konyang\Desktop\VP02_2023-main\004_hello\obj\Debug\004_hello.csproj.GenerateResource.cache
+C:\Users\konyang\Desktop\VP02_2023-main\004_hello\obj\Debug\004_hello.csproj.CoreCompileInputs.cache
+C:\Users\konyang\Desktop\VP02_2023-main\004_hello\obj\Debug\004_hello.exe
+C:\Users\konyang\Desktop\VP02_2023-main\004_hello\obj\Debug\004_hello.pdb
