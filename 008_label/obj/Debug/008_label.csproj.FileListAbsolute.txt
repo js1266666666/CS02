@@ -1,0 +1,11 @@
+C:\Users\konyang\Desktop\VP02_2023-main\008_label\bin\Debug\008_label.exe.config
+C:\Users\konyang\Desktop\VP02_2023-main\008_label\bin\Debug\008_label.exe
+C:\Users\konyang\Desktop\VP02_2023-main\008_label\bin\Debug\008_label.pdb
+C:\Users\konyang\Desktop\VP02_2023-main\008_label\obj\Debug\008_label.csproj.AssemblyReference.cache
+C:\Users\konyang\Desktop\VP02_2023-main\008_label\obj\Debug\008_label.csproj.SuggestedBindingRedirects.cache
+C:\Users\konyang\Desktop\VP02_2023-main\008_label\obj\Debug\_008_label.Form1.resources
+C:\Users\konyang\Desktop\VP02_2023-main\008_label\obj\Debug\_008_label.Properties.Resources.resources
+C:\Users\konyang\Desktop\VP02_2023-main\008_label\obj\Debug\008_label.csproj.GenerateResource.cache
+C:\Users\konyang\Desktop\VP02_2023-main\008_label\obj\Debug\008_label.csproj.CoreCompileInputs.cache
+C:\Users\konyang\Desktop\VP02_2023-main\008_label\obj\Debug\008_label.exe
+C:\Users\konyang\Desktop\VP02_2023-main\008_label\obj\Debug\008_label.pdb

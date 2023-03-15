@@ -1,0 +1,11 @@
+C:\Users\konyang\Desktop\VP02_2023-main\006_BasicControls\bin\Debug\006_BasicControls.exe.config
+C:\Users\konyang\Desktop\VP02_2023-main\006_BasicControls\bin\Debug\006_BasicControls.exe
+C:\Users\konyang\Desktop\VP02_2023-main\006_BasicControls\bin\Debug\006_BasicControls.pdb
+C:\Users\konyang\Desktop\VP02_2023-main\006_BasicControls\obj\Debug\006_BasicControls.csproj.AssemblyReference.cache
+C:\Users\konyang\Desktop\VP02_2023-main\006_BasicControls\obj\Debug\006_BasicControls.csproj.SuggestedBindingRedirects.cache
+C:\Users\konyang\Desktop\VP02_2023-main\006_BasicControls\obj\Debug\_006_BasicControls.Form1.resources
+C:\Users\konyang\Desktop\VP02_2023-main\006_BasicControls\obj\Debug\_006_BasicControls.Properties.Resources.resources
+C:\Users\konyang\Desktop\VP02_2023-main\006_BasicControls\obj\Debug\006_BasicControls.csproj.GenerateResource.cache
+C:\Users\konyang\Desktop\VP02_2023-main\006_BasicControls\obj\Debug\006_BasicControls.csproj.CoreCompileInputs.cache
+C:\Users\konyang\Desktop\VP02_2023-main\006_BasicControls\obj\Debug\006_BasicControls.exe
+C:\Users\konyang\Desktop\VP02_2023-main\006_BasicControls\obj\Debug\006_BasicControls.pdb
