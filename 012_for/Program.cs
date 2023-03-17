@@ -46,6 +46,19 @@ namespace _012_for
             {
                 Console.WriteLine("{0} x {1} = {2}", n, i, n * i);
             }
+
+            // x의 y승 = x를 y번 곱한다
+            Console.Write("x : ");
+            int x = int.Parse(Console.ReadLine());
+            Console.Write("y : ");
+            int y = int.Parse(Console.ReadLine());
+
+            int exp = 1;
+            for (int i = 0; i <= y; i++)
+            {
+                exp *= x;
+            }
+            Console.WriteLine("{0}의 {1}승 : {2}", x,y,exp);
         }
     }
 }
