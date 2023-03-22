@@ -59,6 +59,15 @@ namespace _012_for
                 exp *= x;
             }
             Console.WriteLine("{0}의 {1}승 : {2}", x,y,exp);
+
+            //팩토리얼 3.22
+            Console.Write("n : ");
+            n = int.Parse(Console.ReadLine());
+
+            int fact = 1;
+            for (int i = 1; i <= n; i++)
+                fact *= i;
+            Console.WriteLine("{0}! : {1}", n, fact);      
         }
     }
 }
