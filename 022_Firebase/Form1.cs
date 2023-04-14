@@ -11,11 +11,14 @@ using System.Windows.Forms;
 using FireSharp.Interfaces;
 using FireSharp.Config;
 using FireSharp.Response;
+using System.Security.Cryptography;
 
 namespace _021_Firebase
 {
     public partial class Form1 : Form
     {
+        DataTable dt = new DataTable();
+
         IFirebaseConfig config = new FirebaseConfig
         {
             AuthSecret = "u8NJbVCBHRgvOnUJxWCQoUrOOI4MsfHwTRSmvp7e", // 설정 - 프로젝트 설정 - 서비스 계정 - 비밀번호
@@ -33,21 +36,42 @@ namespace _021_Firebase
             client = new FireSharp.FirebaseClient(config);
             if (client != null)
                 MessageBox.Show("Connection 성공");
+        
+            //DataGridView에서 사용하는 필드
+            dt.Columns.Add("Id");
+            dt.Columns.Add("학번");
+            dt.Columns.Add("이름");
+            dt.Columns.Add("전화번호");
+
+            dataGridView1.DataSource = dt;
+
         }
 
         private async void btninsert_Click(object sender, EventArgs e)
         {
-            var data = new Data //==Data data = new data / var는 무슨형태든 가능
+            //firebase에서 cnt값 가져오기
+            FirebaseResponse resp = await client.GetAsync("VP02_Counter/nPhones"); //cnt가져온 값 resp에 넣고
+            Counter c = resp.ResultAs<Counter>();//Counter타입으로 있음 , c에 counter타입으로 넣음
+
+
+            var data = new Data
             {
-                Id = txtid.Text,
+                Id = (c.cnt + 1).ToString(), //string으로 바꿈
                 SId = txtsid.Text,
                 Name = txtname.Text,
                 Phone = txtphone.Text
             };
 
-            SetResponse response = await client.SetAsync("VP02_Phonebook/" + txtid.Text, data);// 추가
+            SetResponse response = await client.SetAsync("VP02_Phonebook/" + data.Id, data);// 추가
             Data result = response.ResultAs<Data>();
             MessageBox.Show("Data Inserted : " + result.Id);
+
+            //Firebase에 있는 cnt 증가
+            var obj = new Counter
+            {
+                cnt = c.cnt + 1
+            };
+            SetResponse resp1 = await client.SetAsync("VP02_Counter/nPhones",obj);
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -84,6 +108,7 @@ namespace _021_Firebase
             FirebaseResponse response = await client.UpdateAsync("VP02_Phonebook/" + txtid.Text, data);
             Data result = response.ResultAs<Data>();
             MessageBox.Show("Data updated at "+result.Id);
+            export();
         }
 
         private async void btndelete_Click(object sender, EventArgs e)
@@ -93,7 +118,9 @@ namespace _021_Firebase
             txtid.Text = "";
             txtsid.Text = "";
             txtname.Text = "";
-            txtphone.Text = "";        }
+            txtphone.Text = "";
+            export();
+        }
 
         private async void btndeleteall_Click(object sender, EventArgs e)
         {
@@ -105,6 +132,7 @@ namespace _021_Firebase
             FirebaseResponse response = await client.DeleteAsync("VP02_Phonebook");//VP02_Phonebook 전체 삭제
 
             MessageBox.Show("All data Deleted! /VP02_Phonebook");
+            export();
         }
 
         private void btnclose_Click(object sender, EventArgs e)
@@ -115,6 +143,34 @@ namespace _021_Firebase
         private void btnviewall_Click(object sender, EventArgs e)
         {
             
+            export();
+        }
+
+        //firebase에서 데이터를 읽고 DataGridView에 표시
+        private async void export()
+        {
+            dt.Rows.Clear();
+            int i = 0;
+            FirebaseResponse response = await client.GetAsync("VP02_Counter/nPhones");
+            Counter obj = response.ResultAs<Counter>();
+
+            int cnt = obj.cnt;
+
+            while (i != cnt)
+            {
+                i++;
+                FirebaseResponse r = await client.GetAsync("VP02_Phonebook/" + i);
+                Data d = r.ResultAs<Data>();
+
+                DataRow row = dt.NewRow();
+                row["Id"] = d.Id;
+                row["학번"] = d.SId;
+                row["이름"] = d.Name;
+                row["전화번호"] = d.Phone;
+
+                dt.Rows.Add(row);
+            }
+
         }
     }
 }
