@@ -162,14 +162,28 @@ namespace _021_Firebase
                 FirebaseResponse r = await client.GetAsync("VP02_Phonebook/" + i);
                 Data d = r.ResultAs<Data>();
 
-                DataRow row = dt.NewRow();
-                row["Id"] = d.Id;
-                row["학번"] = d.SId;
-                row["이름"] = d.Name;
-                row["전화번호"] = d.Phone;
 
-                dt.Rows.Add(row);
+                if (d != null)
+                {
+                 DataRow row = dt.NewRow();
+                 row["Id"] = d.Id;
+                 row["학번"] = d.SId;
+                 row["이름"] = d.Name;
+                 row["전화번호"] = d.Phone;
+             
+                 dt.Rows.Add(row);
+                }
             }
+        }
+
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridView dgv = (DataGridView)sender; //sender를 사용할려면 이렇게 처리해야함
+            txtid.Text = dgv.Rows[e.RowIndex].Cells[0].Value.ToString(); //e는 DataGridViewCellEventArgs를 뜻함
+            txtname.Text = dgv.Rows[e.RowIndex].Cells[1].Value.ToString();
+            txtphone.Text = dgv.Rows[e.RowIndex].Cells[2].Value.ToString();
+            txtsid.Text = dgv.Rows[e.RowIndex].Cells[3].Value.ToString();
 
         }
     }
